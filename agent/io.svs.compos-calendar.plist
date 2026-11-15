@@ -6,7 +6,7 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/zsh</string>
-    <string>/Users/svs/src/compos/scheme/packages/calendar/agent/drain.sh</string>
+    <string>/Users/svs/.compos/repos/calendar/agent/drain.sh</string>
   </array>
   <key>WatchPaths</key>
   <array>

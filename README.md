@@ -1,3 +1,13 @@
+# compos-calendar
+
+The macOS calendar through EventKit: settings, verbs and the agent that reads it.
+
+A community package for [compos](https://github.com/compos-dev). Install it from init.scm:
+
+```scheme
+(use-package 'calendar 'repo "compos-dev/compos-calendar" 'defer #t)
+```
+
 # Calendar
 
 One calendar surface over every account the operating system already knows about. The store is a text file. Scheme owns the verbs, the parse and the views. There is no Elixir module, no compiled binary, no OAuth client, no token, and on macOS no CalDAV.
