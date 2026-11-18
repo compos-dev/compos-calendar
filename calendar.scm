@@ -33,9 +33,9 @@
 (define calendar-agent-timeout 20)
 
 (defcustom 'calendar-agent-directory
-  (let ((f (locate-library "calendar.scm")))
-    (if f (string-append (substring f 0 (- (string-length f) 13)) "/agent")
-        (string-append (compos-home) "/repos/calendar/agent")))
+  ;; package-directory, not locate-library: ~/.compos/calendar.scm (the
+  ;; config) shadows the package on the load path.
+  (string-append (package-directory "calendar") "/agent")
   "Where the agent's plist and payloads live.")
 
 ;; A plist reader that answers #f for a missing key instead of throwing.
